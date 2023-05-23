@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const baseUrl = `https://contact.herokuapp.com/contact`;
-export default function DetailPage({ navigation }) {
+export default function MainPage({ navigation }) {
   const [isLoading, setLoading] = useState(true);
   const [contacts, setContacts] = useState([]);
 
@@ -30,7 +30,7 @@ export default function DetailPage({ navigation }) {
 
   const renderAllContacts = ({ item }) => {
     return (
-      <TouchableOpacity>
+      <TouchableOpacity onPress={()=>navigation.navigate('DetailPage', {id : item.id})}>
         <View style={styles.card}>
           <Text style={{ color: "white" }}>
             {item.firstName} {item.lastName}
