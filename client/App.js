@@ -9,11 +9,7 @@ const Stack = createNativeStackNavigator()
 
 export default function App() {
   return (
-    // <View style={styles.container}>
-    //   <Text>wazzap </Text>
-    //   <StatusBar style="auto" />
-    // </View>
-    <NavigationContainer>
+    <NavigationContainer style={styles.container}>
       <Stack.Navigator>
         <Stack.Screen name='MainPage' component={MainPage}/>
         <Stack.Screen name='DetailPage' component={DetailPage}/>
@@ -25,7 +21,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
