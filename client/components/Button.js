@@ -1,6 +1,6 @@
 import { Image, Text, View, StyleSheet, TouchableOpacity } from "react-native";
 
-export default function MainPageButton(props) {
+export default function Button(props) {
   return (
     <>
     <TouchableOpacity style={styles.iconContainer}>

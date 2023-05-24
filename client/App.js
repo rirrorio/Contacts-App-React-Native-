@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import MainPage from './Pages/MainPage'
 import DetailPage from './Pages/DetailPage'
+import AddContact from './Pages/AddContact'
 
 const Stack = createNativeStackNavigator()
 const myTheme = {
@@ -21,6 +22,7 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name='MainPage' component={MainPage}/>
         <Stack.Screen name='DetailPage' component={DetailPage}/>
+        <Stack.Screen name='AddContact' component={AddContact}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
