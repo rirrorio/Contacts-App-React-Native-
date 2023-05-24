@@ -2,7 +2,16 @@ import { useEffect, useState } from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 import axios from "axios";
 
+import buttonDetail from "../components/Button";
+
+import messageLogo from '../assets/icons8-message-100.png'
+import callLogo from '../assets/icons8-message-100.png'
+import videoCallLogo from '../assets/icons8-video-call-100.png'
+import mailLogo from '../assets/icons8-mail-100.png'
+
+
 const baseUrl = `https://contact.herokuapp.com/contact`;
+
 export default function DetailPage({ route }) {
   const { id } = route.params;
   const [isloading, setloading] = useState(true);
@@ -33,6 +42,9 @@ export default function DetailPage({ route }) {
           Phone Number : Unknown {'\n'}
           Location : Unknown (not the honne song btw)
         </Text>
+      </View>
+      <View>
+        
       </View>
     </View>
   );
