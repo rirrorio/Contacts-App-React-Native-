@@ -42,7 +42,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 3,
     flexDirection:'column',
-    backgroundColor: "black",
     alignItems: "center",
   },
   image: {
